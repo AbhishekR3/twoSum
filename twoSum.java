@@ -6,8 +6,8 @@ import java.util.*;
 public class twoSum {
 
 	// This creates the array of values and the sum value
-	public static int[] num = {2, 12, 8, 7};
-	public static int sum = 9;
+	public static int[] num = {1, 13, 18, 20, 20, 30};
+	public static int sum = 40;
 
 	// This creates checks which 2 values in the array summed up result in the sum value.
 	public static int [] twoSum(int[] num, int sum){
@@ -24,7 +24,7 @@ public class twoSum {
 
 			// Finds which jth integer in array equals to the difference
 			for (int j = 0; j < num.length; j++){
-				if ((diff == num[j]) && (num[j] != num[i])){
+				if ((diff == num[j]) && (j != i)){
 					found = true;
 					System.out.println("[" + i + ", " + j + "]");
 					break;
